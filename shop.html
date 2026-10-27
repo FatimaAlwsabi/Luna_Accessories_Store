@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#281b28">
+    <title>تسوّقي المجموعة | LUNA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="announcement">اختاري القطعة التي تشبهكِ <span>♡</span></div>
+    <header class="header"><a class="logo" href="index.html"><span
+                class="logo-moon">☾</span><span><b>LUNA</b><small>ACCESSORIES STUDIO</small></span></a><button
+            class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false"><i></i><i></i><i></i></button>
+        <nav class="nav"><a href="index.html">الرئيسية</a><a class="active" href="shop.html">تسوّقي</a><a
+                href="about.html">قصتنا</a><a href="contact.html">تواصلي معنا</a></nav>
+        <div class="header-actions"><button class="search-open" aria-label="البحث">⌕</button><button
+                class="bag-link cart-open" aria-label="عرض السلة">♡ <span class="bag-count">0</span></button></div>
+    </header>
+    <main>
+        <section class="shop-hero">
+            <div class="shop-hero-copy"><span class="eyebrow dark-eye"><i></i> LUNA COLLECTION</span>
+                <h1>اختاري ما يشبهكِ،<br><em>واتركي الباقي للبريق.</em></h1>
+                <p>مجموعة مختارة لتكمّل يومكِ وترافق مناسباتكِ، من القطع الناعمة إلى التفاصيل التي تلفت النظر.</p>
+                <div class="breadcrumbs"><a href="index.html">الرئيسية</a><span>／</span><span>المتجر</span></div>
+            </div>
+            <div class="shop-hero-image"><img
+                    src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=85"
+                    alt="مجموعة لونا"></div>
+        </section>
+        <section class="shop-section" id="products">
+            <div class="shop-toolbar">
+                <div><span class="eyebrow dark-eye"><i></i> اكتشفي مجموعتنا</span>
+                    <h2>كل القطع <em>المفضّلة.</em></h2>
+                </div>
+                <div class="filters"><button class="filter-btn active" data-filter="all">الكل</button><button
+                        class="filter-btn" data-filter="necklaces">قلائد</button><button class="filter-btn"
+                        data-filter="earrings">أقراط</button><button class="filter-btn"
+                        data-filter="bracelets">أساور</button><button class="filter-btn"
+                        data-filter="rings">خواتم</button></div>
+            </div>
+            <div class="product-grid shop-products">
+                <article class="product-card" id="necklaces" data-id="101" data-name="قلادة هالة" data-price="18"
+                    data-category="necklaces">
+                    <div class="product-image"><img
+                            src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=85"
+                            alt="قلادة هالة"><span class="product-tag">الأكثر حبًا</span><button class="quick-add"
+                            aria-label="أضيفي إلى السلة">+</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>قلادة هالة</h3><small>ذهب ناعم · لمعة يومية</small>
+                        </div><b class="price">$18</b>
+                    </div>
+                </article>
+                <article class="product-card" id="earrings" data-id="102" data-name="أقراط لؤلؤ" data-price="14"
+                    data-category="earrings">
+                    <div class="product-image"><img
+                            src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=85"
+                            alt="أقراط لؤلؤ"><span class="product-tag tag-new">وصل حديثًا</span><button
+                            class="quick-add" aria-label="أضيفي إلى السلة">+</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>أقراط لؤلؤ</h3><small>كلاسيكية · ناعمة</small>
+                        </div><b class="price">$14</b>
+                    </div>
+                </article>
+                <article class="product-card" id="bracelets" data-id="103" data-name="سوار سول" data-price="16"
+                    data-category="bracelets">
+                    <div class="product-image"><img
+                            src="https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=700&q=85"
+                            alt="سوار سول"><button class="quick-add" aria-label="أضيفي إلى السلة">+</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>سوار سول</h3><small>ذهبي · يكمّل إطلالتكِ</small>
+                        </div><b class="price">$16</b>
+                    </div>
+                </article>
+                <article class="product-card" id="rings" data-id="104" data-name="خاتم أورورا" data-price="12"
+                    data-category="rings">
+                    <div class="product-image"><img
+                            src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=85"
+                            alt="خاتم أورورا"><span class="product-tag tag-soft">قطعة مميزة</span><button
+                            class="quick-add" aria-label="أضيفي إلى السلة">+</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>خاتم أورورا</h3><small>تصميم بسيط · حضور لافت</small>
+                        </div><b class="price">$12</b>
+                    </div>
+                </article>
+                <article class="product-card" data-id="105" data-name="قلادة قمر" data-price="21"
+                    data-category="necklaces">
+                    <div class="product-image"><img
+                            src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=85"
+                            alt="قلادة قمر"><button class="quick-add" aria-label="أضيفي إلى السلة">+</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>قلادة قمر</h3><small>لمسة ذهبية دافئة</small>
+                        </div><b class="price">$21</b>
+                    </div>
+                </article>
+                <article class="product-card" data-id="106" data-name="أقراط لؤلؤ صغيرة" data-price="11"
+                    data-category="earrings">
+                    <div class="product-image"><img
+                            src="https://images.unsplash.com/photo-1630019852942-f89202989a59?auto=format&fit=crop&w=700&q=85"
+                            alt="أقراط صغيرة"><button class="quick-add" aria-label="أضيفي إلى السلة">+</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>أقراط لؤلؤ صغيرة</h3><small>خفيفة لكل يوم</small>
+                        </div><b class="price">$11</b>
+                    </div>
+                </article>
+                <article class="product-card" data-id="107" data-name="سوار لمعة" data-price="15"
+                    data-category="bracelets">
+                    <div class="product-image"><img
+                            src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=700&q=85"
+                            alt="سوار لمعة"><span class="product-tag tag-new">جديد</span><button class="quick-add"
+                            aria-label="أضيفي إلى السلة">+</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>سوار لمعة</h3><small>تفصيل يلفت بهدوء</small>
+                        </div><b class="price">$15</b>
+                    </div>
+                </article>
+                <article class="product-card" data-id="108" data-name="خاتم ندى" data-price="13" data-category="rings">
+                    <div class="product-image"><img
+                            src="https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&w=700&q=85"
+                            alt="خاتم ندى"><button class="quick-add" aria-label="أضيفي إلى السلة">+</button></div>
+                    <div class="product-info">
+                        <div>
+                            <h3>خاتم ندى</h3><small>بسيط، أنيق، لكِ</small>
+                        </div><b class="price">$13</b>
+                    </div>
+                </article>
+            </div>
+            <p class="no-results" id="noResults">لا توجد قطع في هذا القسم حاليًا.</p>
+        </section>
+        <section class="shop-bottom"><span>✧</span>
+            <div>
+                <h2>القطعة الأجمل؟ <em>التي تجعلكِ أنتِ.</em></h2>
+                <p>اختاري ما تحبين، ونسّقيه بطريقتكِ الخاصة.</p>
+            </div><a class="button button-dark" href="contact.html">تحتاجين مساعدة؟ <span>↗</span></a>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top"><a class="logo" href="index.html"><span
+                    class="logo-moon">☾</span><span><b>LUNA</b><small>ACCESSORIES STUDIO</small></span></a>
+            <p>لأن أجمل التفاصيل هي تلك التي تشبهكِ.</p>
+            <div class="footer-social"><a href="#">ig</a><a href="#">p</a><a href="#">tk</a></div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> LUNA Studio · جميع الحقوق محفوظة</span>
+            <div><a href="about.html">قصتنا</a><a href="contact.html">تواصلي معنا</a></div><span>صُنعت بذوق ♡</span>
+        </div>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="cart-drawer" id="cartDrawer" aria-hidden="true">
+        <div class="drawer-head">
+            <div><span class="eyebrow dark-eye">اختياراتكِ</span>
+                <h3>حقيبة لونا <span class="bag-count">0</span></h3>
+            </div><button class="cart-close" aria-label="إغلاق السلة">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart"><span>♡</span><b>حقيبتكِ تنتظر قطعتكِ الأولى</b><small>ابدئي باكتشاف القطع التي
+                    تحبينها.</small></div>
+        </div>
+        <div class="cart-footer">
+            <div><span>المجموع</span><strong id="cartTotal">$0</strong></div><button
+                class="button button-dark checkout-btn" id="checkoutBtn">متابعة الطلب
+                <span>↗</span></button><small>نموذج تجريبي — لا تتم عملية دفع فعلية.</small>
+        </div>
+    </div>
+    <div class="drawer-overlay" id="drawerOverlay"></div>
+    <div class="search-modal" id="searchModal" aria-hidden="true">
+        <div class="search-box"><button class="search-close" aria-label="إغلاق">×</button><span
+                class="eyebrow dark-eye">ابحثي عن قطعتكِ</span>
+            <h3>ما الذي تبحثين عنه؟</h3>
+            <form id="searchForm"><input id="searchInput" placeholder="قلادة، أقراط، سوار..." autocomplete="off"><button
+                    type="submit">بحث ↗</button></form>
+            <p>جرّبي: قلادة · لؤلؤ · خاتم</p>
+        </div>
+    </div>
+</body>
+
+</html>

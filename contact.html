@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تواصلي معنا | LUNA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="announcement">نحن هنا للإجابة عن أسئلتكِ <span>♡</span></div>
+    <header class="header"><a class="logo" href="index.html"><span
+                class="logo-moon">☾</span><span><b>LUNA</b><small>ACCESSORIES STUDIO</small></span></a><button
+            class="menu-toggle" aria-label="فتح القائمة" aria-expanded="false"><i></i><i></i><i></i></button>
+        <nav class="nav"><a href="index.html">الرئيسية</a><a href="shop.html">تسوّقي</a><a href="about.html">قصتنا</a><a
+                class="active" href="contact.html">تواصلي معنا</a></nav>
+        <div class="header-actions"><button class="search-open" aria-label="البحث">⌕</button><a class="bag-link"
+                href="shop.html#products">♡ <span class="bag-count">0</span></a></div>
+    </header>
+    <main>
+        <section class="inner-cover contact-cover">
+            <div class="inner-cover-copy"><span class="eyebrow dark-eye"><i></i> يسعدنا سماعكِ</span>
+                <h1>رسالة منكِ،<br><em>تسعد قلب لونا.</em></h1>
+                <p>عندكِ سؤال عن قطعة أو طلب أو اقتراح؟ اتركي لنا رسالة وسنكون سعداء بالتواصل معكِ.</p>
+                <div class="breadcrumbs"><a href="index.html">الرئيسية</a><span>／</span><span>تواصلي معنا</span></div>
+            </div>
+            <div class="contact-orbit"><span>♡</span><b>LET'S<br>TALK</b><small>LUNA STUDIO</small></div>
+        </section>
+        <section class="contact-section">
+            <div class="contact-side"><span class="eyebrow dark-eye"><i></i> نحن قريبات</span>
+                <h2>كيف نقدر <em>نساعدكِ؟</em></h2>
+                <p>كل سؤال مهم بالنسبة لنا، سواء عن تفاصيل المنتجات أو الطلبات أو التعاون.</p>
+                <div class="contact-method"><span>✉</span>
+                    <div><b>البريد الإلكتروني</b><small>hello@luna-store.example</small></div>
+                </div>
+                <div class="contact-method"><span>◷</span>
+                    <div><b>أوقات الرد</b><small>الأحد – الخميس · 9 صباحًا إلى 5 مساءً</small></div>
+                </div>
+                <div class="contact-method"><span>♡</span>
+                    <div><b>تابعينا</b><small>Instagram · Pinterest · TikTok</small></div>
+                </div>
+                <div class="contact-tip">✧ <span>معلومة: البريد وساعات العمل هنا أمثلة تجريبية؛ عدّليها قبل نشر
+                        الموقع.</span></div>
+            </div>
+            <div class="contact-form-wrap">
+                <div class="form-title"><span class="form-pill">اكتبي لنا</span>
+                    <h3>ما الذي يدور في بالكِ؟</h3>
+                    <p>املئي الحقول التالية وسنكون سعداء بقراءة رسالتكِ.</p>
+                </div>
+                <form id="contactForm">
+                    <div class="form-row"><label>اسمكِ<input name="name" required minlength="2"
+                                placeholder="الاسم الكامل"></label><label>بريدكِ الإلكتروني<input name="email"
+                                type="email" required placeholder="name@example.com"></label></div><label>موضوع
+                        الرسالة<select name="subject" required>
+                            <option value="" disabled selected>اختاري الموضوع</option>
+                            <option>استفسار عن منتج</option>
+                            <option>متابعة طلب</option>
+                            <option>استبدال أو إرجاع</option>
+                            <option>تعاون أو اقتراح</option>
+                            <option>موضوع آخر</option>
+                        </select></label><label>رسالتكِ<textarea name="message" rows="5" required minlength="8"
+                            placeholder="اكتبي رسالتكِ هنا..."></textarea></label><button
+                        class="button button-dark form-submit" type="submit">إرسال الرسالة <span>↗</span></button>
+                    <p id="formStatus" class="form-status" role="status"></p><small class="form-disclaimer">واجهة
+                        تجريبية: لن تُرسل الرسالة فعليًا قبل ربط النموذج بخادم أو خدمة بريد.</small>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top"><a class="logo" href="index.html"><span
+                    class="logo-moon">☾</span><span><b>LUNA</b><small>ACCESSORIES STUDIO</small></span></a>
+            <p>لأن أجمل التفاصيل هي تلك التي تشبهكِ.</p>
+            <div class="footer-social"><a href="#">ig</a><a href="#">p</a><a href="#">tk</a></div>
+        </div>
+        <div class="footer-bottom"><span>© <span id="year"></span> LUNA Studio · جميع الحقوق محفوظة</span>
+            <div><a href="about.html">قصتنا</a><a href="shop.html">المتجر</a></div><span>صُنعت بذوق ♡</span>
+        </div>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+    <div class="search-modal" id="searchModal" aria-hidden="true">
+        <div class="search-box"><button class="search-close" aria-label="إغلاق">×</button><span
+                class="eyebrow dark-eye">ابحثي عن قطعتكِ</span>
+            <h3>ما الذي تبحثين عنه؟</h3>
+            <form id="searchForm"><input id="searchInput" placeholder="قلادة، أقراط، سوار..." autocomplete="off"><button
+                    type="submit">بحث ↗</button></form>
+        </div>
+    </div>
+</body>
+
+</html>
